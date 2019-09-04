@@ -9,7 +9,8 @@ window.onload = function(event) {
 		let weight = document.getElementById("weight").value;
 		let weightElements = document.getElementsByClassName("planet-weight");
 
-		calculateWeights(weight, weightElements);
+		let weights = calculateWeights(weight, weightElements);
+		displayWeights(weights, weightElements);
 	});
 
 	function calculateWeights(weight, weightElements) {
@@ -33,5 +34,12 @@ window.onload = function(event) {
 		}
 
 		return newWeights;
+	}
+
+	function displayWeights(weights, weightElements) {
+		for (let i = 0; i < weightElements.length; i++) {
+			console.log(weights[i]);
+			weightElements[i].textContent = weights[i];
+		}
 	}
 };
