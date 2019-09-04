@@ -8,4 +8,12 @@ body, html {
   font-size: 16px;
   color: #000000; }
 
+header {
+  padding: 5px 10px; }
+  header h1 {
+    margin: 0;
+    text-align: right;
+    text-decoration-line: underline;
+    text-decoration-color: #6565FF; }
+
 /*# sourceMappingURL=styles.css.map */
