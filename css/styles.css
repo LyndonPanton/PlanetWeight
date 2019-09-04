@@ -39,6 +39,9 @@ header {
     header #more i:hover, header #more i:focus {
       color: #33CC33; }
 
+main {
+  padding: 20px 30px; }
+
 footer {
   padding: 100px 0;
   background-color: #FCFCFC;
