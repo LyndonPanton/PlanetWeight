@@ -83,6 +83,35 @@ main
 			input:focus
 				border-bottom-color: #33CC33
 
+	table
+		thead
+			tr
+				border-bottom: #000000 solid 1px
+
+				th
+					padding: 10px 0
+					font-weight: normal
+				th:nth-child(2)
+					border-right: #000000 solid 1px
+					border-left: #000000 solid 1px
+		tbody
+			tr
+				border-bottom: #000000 solid 1px
+
+				td
+					padding: 10px 0
+					text-align: center
+				td:nth-child(2)
+					border-right: #000000 solid 1px
+					border-left: #000000 solid 1px
+
+			tr:last-child
+				border-bottom: none
+
+
+	table, td, th, tr
+		border-collapse: collapse
+
 // footer
 footer
 	padding: 100px 0
