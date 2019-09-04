@@ -4,6 +4,11 @@ window.onload = function(event) {
 
 	let button = document.getElementById("submit");
 	button.addEventListener("click", shine.bind(this, button));
+	button.addEventListener("keyup", function(event) {
+		if (event.keyCode === 13 || event.keyCode === 32) {
+			shine(this);
+		}
+	});
 
 	let form = document.getElementsByTagName("form")[0];
 	form.addEventListener("submit", function(event) {
