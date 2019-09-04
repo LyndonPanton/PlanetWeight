@@ -44,6 +44,24 @@ header {
 
 main {
   padding: 20px 30px; }
+  main form input {
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif; }
+  main form input[type="submit"] {
+    display: block;
+    margin: 20px auto 10px;
+    border: none;
+    padding: 5px 15px;
+    background-color: #5588FF;
+    color: #FFFFFF; }
+  main form label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    main form label input {
+      border: none;
+      border-bottom: #000000 solid 1px; }
+    main form label input:focus {
+      border-bottom-color: #33CC33; }
 
 footer {
   padding: 100px 0;
