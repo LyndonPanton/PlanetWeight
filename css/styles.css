@@ -18,11 +18,12 @@ header {
     margin: 0;
     text-align: right;
     text-decoration-line: underline;
-    text-decoration-color: #6565FF; }
+    text-decoration-color: #6565FF;
+    font-size: 1.8em; }
   header #hamburger {
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 22px;
+    left: 20px;
     -moz-background: linear-gradient(0deg, #33CC33 0%, #33CC33 20%, transparent 20%, transparent 40%, #33CC33 40%, #33CC33 60%, transparent 60%, transparent 80%, #33CC33 80%, #33CC33 100%);
     -ms-background: linear-gradient(0deg, #33CC33 0%, #33CC33 20%, transparent 20%, transparent 40%, #33CC33 40%, #33CC33 60%, transparent 60%, transparent 80%, #33CC33 80%, #33CC33 100%);
     -o-background: linear-gradient(0deg, #33CC33 0%, #33CC33 20%, transparent 20%, transparent 40%, #33CC33 40%, #33CC33 60%, transparent 60%, transparent 80%, #33CC33 80%, #33CC33 100%);
@@ -32,7 +33,7 @@ header {
     height: 20px; }
   header #more {
     text-align: right;
-    font-size: 1.2em; }
+    font-size: 1em; }
     header #more i {
       margin-left: 35px;
       transition: all 0.3s linear; }
