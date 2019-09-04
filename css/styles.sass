@@ -106,7 +106,25 @@ main
 					border-left: #000000 solid 1px
 
 			tr:last-child
-				border-bottom: none
+				// border-bottom: none
+		tfoot
+			border-top: #000000 solid 1px
+			border-bottom: #000000 solid 1px
+			text-align: center
+
+			tr
+				td
+					padding: 4px 6px 4px 6px
+					
+					a
+						border-bottom: #555555 dotted 1px
+						text-decoration: none
+						color: #555555
+					a:focus, a:hover
+						border-bottom-color: #6565FF
+						color: #6565FF
+
+
 
 
 	table, td, th, tr
@@ -125,7 +143,7 @@ footer
 			border-bottom: #555555 dotted 1px
 			text-decoration: none
 			color: #555555
-		a:hover
+		a:focus, a:hover
 			border-bottom-color: #6565FF
 			color: #6565FF
 

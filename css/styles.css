@@ -85,8 +85,19 @@ main {
     main table tbody tr td:nth-child(2) {
       border-right: #000000 solid 1px;
       border-left: #000000 solid 1px; }
-  main table tbody tr:last-child {
-    border-bottom: none; }
+  main table tfoot {
+    border-top: #000000 solid 1px;
+    border-bottom: #000000 solid 1px;
+    text-align: center; }
+    main table tfoot tr td {
+      padding: 4px 6px 4px 6px; }
+      main table tfoot tr td a {
+        border-bottom: #555555 dotted 1px;
+        text-decoration: none;
+        color: #555555; }
+      main table tfoot tr td a:focus, main table tfoot tr td a:hover {
+        border-bottom-color: #6565FF;
+        color: #6565FF; }
   main table, main td, main th, main tr {
     border-collapse: collapse; }
 
@@ -100,7 +111,7 @@ footer {
     border-bottom: #555555 dotted 1px;
     text-decoration: none;
     color: #555555; }
-  footer p a:hover {
+  footer p a:focus, footer p a:hover {
     border-bottom-color: #6565FF;
     color: #6565FF; }
 
