@@ -9,10 +9,8 @@ body, html {
   color: #000000; }
 
 header {
-  box-shadow: 0px 4px #E7E7E7, 1px 4px #E9E9E9, 2px 4px #EBEBEB, 3px 4px #EDEDED, 4px 4px #FFFFFF;
   border: black solid 1px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  margin-bottom: 10px;
   padding: 5px 10px; }
   header h1 {
     margin: 0;
