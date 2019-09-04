@@ -9,13 +9,13 @@ window.onload = function(event) {
 		let weight = document.getElementById("weight").value;
 		let weightElements = document.getElementsByClassName("planet-weight");
 
-		let weights = calculateWeights(weight, weightElements);
+		let weights = calculateWeights(weight);
 		displayWeights(weights, weightElements);
 	});
 
-	function calculateWeights(weight, weightElements) {
+	function calculateWeights(weight) {
 		// mercury, venus, mars, jupiter, saturn, uranus, neptune
-		let gravitationForces = [
+		let gravitationalForces = [
 			3.7,
 			8.87,
 			3.711,
@@ -28,8 +28,8 @@ window.onload = function(event) {
 		let newWeights = [];
 		let g = 9.81;
 
-		for (let i = 0; i < weightElements.length; i++) {
-			let newWeight = ((Number(weight) / g) * gravitationForces[i]).toFixed(2);
+		for (let i = 0; i < gravitationalForces.length; i++) {
+			let newWeight = ((Number(weight) / g) * gravitationalForces[i]).toFixed(2);
 			newWeights.push(newWeight);
 		}
 
@@ -38,7 +38,6 @@ window.onload = function(event) {
 
 	function displayWeights(weights, weightElements) {
 		for (let i = 0; i < weightElements.length; i++) {
-			console.log(weights[i]);
 			weightElements[i].textContent = weights[i];
 		}
 	}
