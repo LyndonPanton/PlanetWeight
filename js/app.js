@@ -28,7 +28,7 @@ window.onload = function(event) {
 		let g = 9.81;
 
 		for (let i = 0; i < weightElements.length; i++) {
-			let newWeight = (Number(weight) / g) * gravitationForces[i];
+			let newWeight = ((Number(weight) / g) * gravitationForces[i]).toFixed(2);
 			newWeights.push(newWeight);
 		}
 
