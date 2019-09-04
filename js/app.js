@@ -2,6 +2,9 @@ window.onload = function(event) {
 	let copyrightYear = document.getElementById("copyright-year");
 	copyrightYear.textContent = (new Date()).getFullYear();
 
+	let button = document.getElementById("submit");
+	button.addEventListener("click", shine.bind(this, button));
+
 	let form = document.getElementsByTagName("form")[0];
 	form.addEventListener("submit", function(event) {
 		event.preventDefault();
@@ -40,5 +43,12 @@ window.onload = function(event) {
 		for (let i = 0; i < weightElements.length; i++) {
 			weightElements[i].textContent = weights[i];
 		}
+	}
+
+	function shine(element) {
+		element.classList.add("shine");
+		setTimeout(function(event) {
+			element.classList.remove("shine");
+		}, 400);
 	}
 };
