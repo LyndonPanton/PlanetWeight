@@ -63,7 +63,15 @@ main
 			border: none
 			padding: 5px 15px
 			background-color: #5588FF
+			background: #5588FF
 			color: #FFFFFF
+		.shine
+			-moz-animation: 0.4s shine
+			-ms-animation: 0.4s shine
+			-o-animation: 0.4s shine
+			-webkit-animation: 0.4s shine
+			animation: 0.4s shine
+
 		label
 			display: flex
 			flex-direction: row
@@ -92,3 +100,28 @@ footer
 			border-bottom-color: #6565FF
 			color: #6565FF
 
+// keyframes
+@keyframes shine
+	0%
+		background: linear-gradient(135deg, #FAFAFA 0%, #FAFAFA 10%, #5588FF 10%, #5588FF 100%)
+	10%
+		background: linear-gradient(135deg, #5588FF 0%, #5588FF 10%, #FAFAFA 10%, #FAFAFA 20%, #5588FF 20%, #5588FF 100%)
+	20%
+		background: linear-gradient(135deg, #5588FF 0%, #5588FF 20%, #FAFAFA 20%, #FAFAFA 30%, #5588FF 30%, #5588FF 100%)
+	30%
+		background: linear-gradient(135deg, #5588FF 0%, #5588FF 30%, #FAFAFA 30%, #FAFAFA 40%, #5588FF 40%, #5588FF 100%)
+	40%
+		background: linear-gradient(135deg, #5588FF 0%, #5588FF 40%, #FAFAFA 40%, #FAFAFA 50%, #5588FF 50%, #5588FF 100%)
+	50%
+		background: linear-gradient(135deg, #5588FF 0%, #5588FF 50%, #FAFAFA 50%, #FAFAFA 60%, #5588FF 60%, #5588FF 100%)
+	60%
+		background: linear-gradient(135deg, #5588FF 0%, #5588FF 60%, #FAFAFA 60%, #FAFAFA 70%, #5588FF 70%, #5588FF 100%)
+	70%
+		background: linear-gradient(135deg, #5588FF 0%, #5588FF 70%, #FAFAFA 70%, #FAFAFA 80%, #5588FF 80%, #5588FF 100%)
+	80%
+		background: linear-gradient(135deg, #5588FF 0%, #5588FF 80%, #FAFAFA 80%, #FAFAFA 90%, #5588FF 90%, #5588FF 100%)
+	90%
+		background: linear-gradient(135deg, #5588FF 0%, #5588FF 90%, #FAFAFA 90%, #FAFAFA 100%, #5588FF 100%, #5588FF 100%)
+	100%
+		background: #5588FF
+	
