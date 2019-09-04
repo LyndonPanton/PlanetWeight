@@ -6,13 +6,32 @@ window.onload = function(event) {
 	form.addEventListener("submit", function(event) {
 		event.preventDefault();
 
-		let input = document.getElementById("weight").value;
+		let weight = document.getElementById("weight").value;
 		let weightElements = document.getElementsByClassName("planet-weight");
 
-		calculateWeights(weightElements);
+		calculateWeights(weight, weightElements);
 	});
 
-	function calculateWeights(weightElements) {
+	function calculateWeights(weight, weightElements) {
+		// mercury, venus, mars, jupiter, saturn, uranus, neptune
+		let gravitationForces = [
+			3.7,
+			8.87,
+			3.711,
+			24.79,
+			10.44,
+			8.69,
+			11.15
+		];
 
+		let newWeights = [];
+		let g = 9.81;
+
+		for (let i = 0; i < weightElements.length; i++) {
+			let newWeight = (Number(weight) / g) * gravitationForces[i];
+			newWeights.push(newWeight);
+		}
+
+		return newWeights;
 	}
 };
